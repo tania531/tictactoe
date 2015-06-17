@@ -15,6 +15,9 @@ function authHandler(error, authData) {
     console.log("Login Failed!", error);
   } else {
     console.log("Authenticated successfully with payload:", authData);
+    $(".hidden").removeClass("hidden");
+    $("#loginName").html(authData.twitter.displayName);
+    console.log("auth: ", authData.twitter.displayName);
   }
 }
 
