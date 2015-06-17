@@ -1,0 +1,10 @@
+/* Styles go here */
+
+td {
+  border: 1px solid black;
+}
+
+table {
+  width:300px;
+  height:300px;
+}
